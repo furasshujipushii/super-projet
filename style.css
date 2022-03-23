@@ -18,7 +18,7 @@ button {
 }
 button:hover {
   color: black;
-  background: whitesmoke;
+  background: purple;
 }
 a {
   text-decoration: none;
