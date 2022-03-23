@@ -1,0 +1,375 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  list-style: none;
+}
+button {
+  background: none;
+  outline: none;
+  border: 1px solid white;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 700;
+  transition: 0.4s ease;
+  cursor: pointer;
+}
+button:hover {
+  color: black;
+  background: whitesmoke;
+}
+a {
+  text-decoration: none;
+}
+body {
+  margin: 0 auto;
+  text-align: center;
+}
+nav {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 5px;
+}
+nav li {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 0.9em;
+  cursor: pointer;
+  position: relative;
+  transition: 0.3s ease;
+  padding: 20px 0;
+}
+nav li:hover {
+  color: rgb(114, 53, 170);
+}
+
+nav li:hover:before {
+  content: "";
+  width: 100%;
+  height: 3px;
+  position: absolute;
+  background: rgb(114, 53, 170);
+  transform: translateY(-20px);
+}
+nav li:last-child:before {
+  background: none;
+}
+#language {
+  background: rgba(128, 128, 128, 0.25);
+  border-radius: 50px;
+  padding: 8px 16px;
+}
+.main-header {
+  background: url(/mastering-front-end-c58be1c392bb718772dc95a9591978fe92e96ed6/assets/img/bg.jpg)
+    fixed center/cover;
+  color: white;
+  padding: 60px;
+}
+h1 {
+  text-transform: uppercase;
+  font-size: 1.5em;
+  font-weight: 700;
+  margin: 30px 0 35px;
+}
+.main-header button {
+  padding: 15px 30px;
+  letter-spacing: 2px;
+}
+.main-header i {
+  transform: translateX(5px);
+}
+.header-text {
+  padding: 45px 0;
+  max-width: 1100px;
+  font-size: 1.2em;
+  line-height: 34px;
+  margin: 0 auto;
+}
+.icon-part {
+  background: rgb(10, 10, 10);
+  padding: 60px 0;
+  color: whitesmoke;
+}
+.icon-part-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.lip-logo {
+  margin-bottom: 30px;
+}
+.icon-part h3 {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.icon-part p {
+  width: 80%;
+  margin: 10px auto 20px;
+}
+.icon-part button {
+  padding: 9px 32px;
+}
+.news-part {
+  background: rgba(236, 235, 235, 0.8);
+  padding: 80px 0 45px;
+}
+.header-news {
+  max-width: 1000px;
+  display: grid;
+  grid-template-columns: 70% 30%;
+  margin: 0 auto;
+}
+.left-part {
+  line-height: 30px;
+}
+.left-part h2 {
+  margin-left: 35px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 600;
+  text-align: left;
+}
+.left-part p {
+  margin-left: 35px;
+  font-weight: 600;
+  font-size: 0.9em;
+  text-align: left;
+}
+.right-part button {
+  color: black;
+  border-color: black;
+  letter-spacing: 1px;
+  padding: 10px 20px;
+}
+.right-part button:hover {
+  color: whitesmoke;
+  border-color: whitesmoke;
+  background: rgb(31, 30, 30);
+}
+.main-news-container {
+  max-width: 1100px;
+  display: flex;
+  justify-content: space-around;
+  margin: 45px auto;
+}
+.main-news-container > div {
+  position: relative;
+  max-width: 23%;
+}
+.mn-pic img {
+  object-fit: cover;
+  width: 100%;
+  border-radius: 3px;
+  box-shadow: 0 2px 10px #888;
+}
+.main-news-container h4 {
+  margin: 15px 0;
+  text-align: left;
+}
+.main-news-container p {
+  text-align: left;
+  font-size: 0.8em;
+  line-height: 20px;
+  margin-bottom: 45px;
+}
+.link {
+  text-align: left;
+  position: absolute;
+  bottom: 0;
+  transition: 0.3s ease;
+}
+.link:hover {
+  opacity: 0.6;
+}
+.main-news a {
+  text-transform: uppercase;
+  font-size: 0.7em;
+  letter-spacing: 1px;
+  font-weight: 900;
+}
+.main-news i {
+  transform: translateX(5px);
+}
+.contact {
+  padding: 65px 0 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.contact-list {
+  display: flex;
+  justify-content: space-around;
+  font-weight: 400;
+  position: relative;
+}
+.contact-list::after {
+  content: "";
+  height: 1px;
+  width: 80%;
+  background: rgba(95, 93, 93, 0.342);
+  position: absolute;
+  bottom: -28px;
+}
+.contact-list .list {
+  text-align: left;
+  width: 24%;
+}
+#contact-img img {
+  margin: 0 auto;
+  display: block;
+}
+.contact-list h5 {
+  text-transform: uppercase;
+  font-size: 1em;
+  margin-bottom: 15px;
+}
+.infos-p li {
+  margin: 15px 0;
+}
+.list p {
+  line-height: 22px;
+  margin-bottom: 15px;
+}
+.list h6 {
+  font-size: 0.8em;
+  margin-bottom: 8px;
+}
+.list .network {
+  margin: 20px 0 8px;
+}
+.footer-logos i {
+  font-size: 0.8em;
+  margin: 0 12px 30px 0;
+}
+.copyright {
+  margin: 0;
+}
+.contact-medias {
+  padding: 60px 0 15px;
+  display: flex;
+  align-items: center;
+  width: 95%;
+  margin: 0 auto;
+}
+.medias-text {
+  text-align: left;
+  width: 30%;
+}
+.medias-text h3 {
+  text-transform: uppercase;
+  font-size: 0.9em;
+  margin-bottom: 12px;
+}
+.medias-text p {
+  font-size: 0.8em;
+}
+.medias-logos {
+  display: flex;
+  justify-content: space-around;
+  width: 70%;
+}
+.medias-logos img {
+  width: 60px;
+}
+footer {
+  background-color: rgb(15, 15, 15);
+  color: whitesmoke;
+  padding: 25px;
+}
+footer h3 {
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 32px;
+}
+footer ul {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+/* **************************** MEDIA QUERIES  ************************* */
+@media screen and (max-width: 895px) {
+  nav li {
+    font-size: 0.5em;
+  }
+  .main-header img {
+    width: 60%;
+  }
+  .contact-list .list {
+    padding-left: 15px;
+  }
+  .medias-logos img {
+    width: 40px;
+  }
+  footer ul {
+    flex-wrap: wrap;
+  }
+  footer li {
+    margin: 5px;
+  }
+}
+@media screen and (max-width: 705px) {
+  nav {
+    display: none;
+  }
+  .icon-part-container {
+    display: block;
+  }
+  .icon-part {
+    padding: 0 0 30px;
+  }
+  .list-icon-part {
+    margin: 40px;
+  }
+  .header-news {
+    display: block;
+  }
+  .left-part {
+    width: 100%;
+  }
+  .left-part h2 {
+    text-align: center;
+  }
+  .left-part p {
+    text-align: center;
+    font-size: 0.6em;
+    margin-bottom: 10px;
+  }
+
+  .right-part button {
+    transform: translateX(20px);
+  }
+  .main-news-container {
+    display: block;
+  }
+  .main-news-container div {
+    max-width: 90%;
+    margin: 0 auto;
+    padding-bottom: 15px;
+    margin-top: 58px;
+  }
+  .main-news-container h4 {
+    text-align: center;
+  }
+  .main-news-container p {
+    text-align: center;
+  }
+  .link {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .main-news-container img {
+    width: 50%;
+  }
+  .contact {
+    display: none;
+  }
+}
